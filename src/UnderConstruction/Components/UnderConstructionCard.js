@@ -16,10 +16,12 @@ const Styles = {
 
 const UnderConstructionCard = () => (
   <Card style={Styles.container} className="text-center">
-    <Card.Header>En construcció</Card.Header>
-    <Card.Img variant="top" src="header-image.png" style={Styles.image} />
     <Card.Body>
-      <Card.Subtitle>Contacta</Card.Subtitle>
+      <Card.Text><i>Pàgina web en construcció...</i></Card.Text>
+    </Card.Body>
+    <Card.Img variant="top" src="logob.jpg" style={Styles.image} />
+    <Card.Body>
+      <Card.Subtitle>Contacta amb nosaltres</Card.Subtitle>
     </Card.Body>
     <ListGroup className="list-group-flush text-justify-left">
       <ListGroup.Item>(+34) 936 745 559</ListGroup.Item>
