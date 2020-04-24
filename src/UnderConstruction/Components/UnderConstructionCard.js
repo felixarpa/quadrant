@@ -8,7 +8,7 @@ const Styles = {
   container: {
     marginTop: '2em',
     marginBottom: '2em',
-    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
   },
   image: {
     paddingLeft: '1em',
@@ -22,7 +22,7 @@ const UnderConstructionCard = () => (
     <Card.Body>
       <Card.Text><i>Pàgina web en construcció...</i></Card.Text>
     </Card.Body>
-    <Card.Img variant="top" src="logo_v2.png" style={Styles.image} />
+    <Card.Img variant="top" src="logo.png" style={Styles.image} />
     <Card.Body>
       <Card.Subtitle>Contacta amb nosaltres</Card.Subtitle>
     </Card.Body>
