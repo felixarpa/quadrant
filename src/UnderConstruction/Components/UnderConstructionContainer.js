@@ -4,7 +4,7 @@ import UnderConstructionCard from "./UnderConstructionCard";
 
 const UnderConstructionContainer = () => (
   <div className="container">
-    <div className="row justify-content-center align-content-end">
+    <div className="row justify-content-center align-items-end">
       <div className="col-lg-5 col-md-8 col-sm-10">
         <UnderConstructionCard />
       </div>

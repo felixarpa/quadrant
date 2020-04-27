@@ -1,8 +1,8 @@
 import React from "react";
-import './aBlank.css';
+import './ABlank.css';
 
-const aBlank = (props) => (
+const ABlank = (props) => (
   <a href={props.href} target={"_blank"} rel={"noopener noreferrer"}>{props.children}</a>
 );
 
-export default aBlank;
+export default ABlank;

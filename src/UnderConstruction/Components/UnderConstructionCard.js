@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
-import aBlank from "../../Utils/aBlank";
+import ABlank from "../../Utils/ABlank";
 import "../index.css";
 
 const Styles = {
@@ -13,29 +13,28 @@ const Styles = {
   image: {
     paddingLeft: '1em',
     paddingRight: '1em',
+    paddingBottom: '1em',
     height: 'auto',
   }
 };
 
+const contactLinks = [
+  { url: 'tel:+34936745559', text: '(+34) 936 745 559' },
+  { url: 'mailto:derzu@quadrant12.com', text: 'derzu@quadrant12.com' },
+  { url: 'https://goo.gl/maps/jQkJF2Bpe4Ek4qUw7', text: 'Dr. Murillo 3 · 08172 St. Cugat · Barcelona' },
+  { url: 'https://goo.gl/maps/vrMhWqGXxfdfkhdj9', text: 'Carrer Major 64, 3r · 25100 Almacelles · Lleida' },
+];
+
 const UnderConstructionCard = () => (
   <Card style={Styles.container} className="text-center">
-    <Card.Body>
-      <Card.Text><i>Pàgina web en construcció...</i></Card.Text>
-    </Card.Body>
+    <Card.Body><Card.Text><i>Pàgina web en construcció...</i></Card.Text></Card.Body>
     <Card.Img variant="top" src="logo.png" style={Styles.image} />
-    <Card.Body>
-      <Card.Subtitle>Contacta amb nosaltres</Card.Subtitle>
-    </Card.Body>
     <ListGroup className="list-group-flush text-justify-left">
-      <ListGroup.Item>
-        <aBlank href={"tel:+34936745559"}>(+34) 936 745 559</aBlank>
-      </ListGroup.Item>
-      <ListGroup.Item>
-        <aBlank href={"https://goo.gl/maps/jQkJF2Bpe4Ek4qUw7"}>Dr. Murillo 3 · 08172 St. Cugat · Barcelona</aBlank>
-      </ListGroup.Item>
-      <ListGroup.Item>
-        <aBlank href={"mailto:derzu@quadrant12.com"}>derzu@quadrant12.com</aBlank>
-      </ListGroup.Item>
+      {contactLinks.map(link => (
+        <ListGroup.Item key={link.url}>
+          <ABlank href={link.url}>{link.text}</ABlank>
+        </ListGroup.Item>
+      ))}
     </ListGroup>
   </Card>
 );
