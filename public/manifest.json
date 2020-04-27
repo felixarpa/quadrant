@@ -1,21 +1,21 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Quadrant",
+  "name": "Enginyeria d'instal·lacions i tecnologies ambientals",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "icon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "icon192_137.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x137"
     },
     {
-      "src": "logo512.png",
+      "src": "icon380_271.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "380x271"
     }
   ],
   "start_url": ".",

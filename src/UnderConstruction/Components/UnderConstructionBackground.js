@@ -39,7 +39,7 @@ const images = [
 class UnderConstructionBackground extends React.Component {
   render() {
     const items = images.map(imagePath => (
-      <Carousel.Item style={slideStyle(imagePath)} />
+      <Carousel.Item key={imagePath} style={slideStyle(imagePath)} />
     ));
 
     return (
