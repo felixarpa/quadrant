@@ -22,7 +22,7 @@ const Header = () => (
       <Navbar.Brand href="/under-construction">
         <img
           alt=""
-          src="logo.png"
+          src="https://quadrant12.netlify.app/logo.png"
           width="auto"
           height="50"
           style={Styles.logo}
