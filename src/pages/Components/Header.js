@@ -12,7 +12,7 @@ const flag = (flagName) => (
     alt=""
     width="32em"
     height="24em"
-    src={`flags/${flagName}.svg`}
+    src={`https://quadrant12.netlify.app/flags/${flagName}.svg`}
     className="d-inline-block align-top"
     />
 );
