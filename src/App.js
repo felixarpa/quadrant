@@ -1,12 +1,18 @@
 import React from 'react';
-import { UnderConstructionBackground, UnderConstructionContainer } from "./UnderConstruction";
-import './App.css';
+import { BrowserRouter, Route } from "react-router-dom";
+import { UnderConstructionPage, MainPage } from "./pages";
 
 const App = () => (
-  <div className={'app'}>
-    <UnderConstructionBackground/>
-    <UnderConstructionContainer/>
-  </div>
+  <BrowserRouter>
+    <div>
+      <Route exact path={"/"}>
+        <UnderConstructionPage />
+      </Route>
+    <Route path={"/under-construction"}>
+        <MainPage />
+      </Route>
+    </div>
+  </BrowserRouter>
 );
 
 
