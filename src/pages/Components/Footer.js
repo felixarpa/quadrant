@@ -27,11 +27,27 @@ const footerLinks = [
 const Footer = () => (
   <div style={Styles.footer}>
     {footerLinks.map((link) => (
-      <p><a href={link.url} target={"_blank"} rel={"noopener noreferrer"}>{link.text}</a></p>
+      <p>
+        <a
+          href={link.url}
+          style={{ color: '#FFFFFF' }}
+          target={"_blank"}
+          rel={"noopener noreferrer"}>
+          {link.text}
+        </a>
+      </p>
     ))}
     <div style={Styles.separator} />
     <code>
-      Made with ❤️ by <b><a href={'https://github.com/felixarpa'} target={"_blank"} rel={"noopener noreferrer"}>felixarpa</a></b>
+      Made with <span role="img" aria-label="heart">❤️</span> by <b>
+        <a
+          href={'https://github.com/felixarpa'}
+          style={{ color: '#FFFFFF' }}
+          target={"_blank"}
+          rel={"noopener noreferrer"}>
+          felixarpa
+        </a>
+      </b>
     </code>
   </div>
 );
