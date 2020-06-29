@@ -1,0 +1,27 @@
+@import "../../App.scss";
+
+.toolbar {
+    border-bottom-width: 1px;
+    border-bottom-color: #063053;
+    border-bottom-style: solid;
+}
+
+.search-box {
+    margin-right: 1em;
+    margin-top: 1em;
+    min-width: 30%;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: #063053;
+    border-bottom-style: solid;
+}
+
+.sort-button {
+    margin-top: 1em;
+}
+
+.layout-toggle {
+    margin-top: 1em;
+}
+
+

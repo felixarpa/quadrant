@@ -1,6 +1,6 @@
 import React from 'react';
-import { UnderConstructionBackground, UnderConstructionContainer } from "./UnderConstruction";
-import './UnderConstructionPage.css';
+import { UnderConstructionBackground, UnderConstructionContainer } from ".";
+import './UnderConstructionPage.scss';
 
 const UnderConstructionPage = () => (
   <div className={'page'}>
