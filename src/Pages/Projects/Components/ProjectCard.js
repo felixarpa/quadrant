@@ -5,7 +5,7 @@ import "../index.scss";
 const ProjectCard = (props) => (
   <Card className="project-card">
     <div className="card-img-container">
-      <img className="card-img" src={props.imageURL} />
+      <img className="project-img" src={props.imageURL}  alt={`Project: ${props.title}`}/>
     </div>
     <Card.Body>
       <Card.Title>{props.title}</Card.Title>

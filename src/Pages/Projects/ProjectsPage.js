@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Toolbar from "./Components/Toolbar";
 import ProjectCard from "./Components/ProjectCard";
+import ProjectItem from "./Components/ProjectItem";
 
 const PROJECTS = [
   {
@@ -31,7 +32,7 @@ class ProjectsPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      layout: "gallery",
+      layout: "list",
       search: null,
       sorting: "new",
       filter: null,
@@ -61,7 +62,7 @@ class ProjectsPage extends React.Component {
   render() {
     const { layout, sorting } = this.state;
 
-    const projectsList = PROJECTS.map(project => (
+    const projectsCards = PROJECTS.map(project => (
       <Col xs={6} className="project-card">
         <ProjectCard
           title={project.title}
@@ -70,6 +71,15 @@ class ProjectsPage extends React.Component {
           location={project.location}
         />
       </Col>
+    ));
+
+    const projectsList = PROJECTS.map(project => (
+      <ProjectItem
+        title={project.title}
+        description={project.description}
+        imageURL={project.imageURL}
+        location={project.location}
+      />
     ));
 
     return (
@@ -88,10 +98,15 @@ class ProjectsPage extends React.Component {
                   />
                 </Col>
               </Row>
-              {}
-              <Row>
-                {projectsList}
-              </Row>
+              {layout === "gallery" ?
+                <Row>
+                  {projectsCards}
+                </Row>
+                :
+                <Row>
+                  {projectsList}
+                </Row>
+              }
             </Container>
           </Col>
         </Row>
