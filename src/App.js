@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import { UnderConstructionPage, MainPage } from "./pages";
+import { UnderConstructionPage, MainPage } from "./Pages/";
 
 const App = () => (
   <BrowserRouter>
