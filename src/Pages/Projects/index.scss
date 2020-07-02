@@ -1,0 +1,78 @@
+@import "../../App.scss";
+
+.page-container {
+    margin-bottom: 14.5em;
+}
+
+.project-card {
+    margin-top: 1em;
+}
+
+.toolbar {
+    border-bottom-width: 1px;
+    border-bottom-color: #063053;
+    border-bottom-style: solid;
+}
+
+.search-box {
+    margin-right: 1em;
+    margin-top: 1em;
+    min-width: 30%;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: #063053;
+    border-bottom-style: solid;
+}
+
+.sort-button {
+    margin-top: 1em;
+}
+
+.layout-toggle {
+    margin-top: 1em;
+}
+
+.card-img-container {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    position: relative;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: row;
+    margin: 1em 1em 0 1em;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+}
+
+
+.item-img-container {
+    display: block;
+    width: 0;
+    height: 100%;
+    padding-left: 20%;
+    position: relative;
+    margin-right: 1em;
+}
+
+.item-content-container {
+    padding: 1em 1em 1em 0;
+}
+
+

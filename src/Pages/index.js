@@ -1,4 +1,4 @@
-import UnderConstructionPage from "./UnderConstructionPage";
+import UnderConstructionPage from "./UnderConstruction/UnderConstructionPage";
 import MainPage from "./MainPage";
 
 export {

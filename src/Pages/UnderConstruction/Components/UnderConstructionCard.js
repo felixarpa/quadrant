@@ -1,8 +1,8 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
-import ABlank from "../../../Utils/ABlank";
-import "../index.css";
+import ABlank from "../../../Components/ABlank";
+import "../index.scss";
 
 const Styles = {
   container: {

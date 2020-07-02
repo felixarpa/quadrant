@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from "react-router-dom";
 import Header from './Components/Header';
 import Footer from "./Components/Footer";
+import { ProjectsPage } from "./Projects";
 
 const Styles = {
   container: {
@@ -21,7 +22,7 @@ const MainPage = () => (
         About us
       </Route>
       <Route path={'/under-construction/projects'}>
-        Projects
+        <ProjectsPage />
       </Route>
       <Route path={'/under-construction/team'}>
         Team
