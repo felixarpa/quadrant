@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import Header from './Components/Header';
 import Footer from "./Components/Footer";
 import { ProjectsPage } from "./Projects";
+import { TeamPage } from "./Team";
 
 const Styles = {
   container: {
@@ -25,7 +26,7 @@ const MainPage = () => (
         <ProjectsPage />
       </Route>
       <Route path={'/under-construction/team'}>
-        Team
+        <TeamPage />
       </Route>
       <Route path={"/under-construction/contact"}>
         Contact
