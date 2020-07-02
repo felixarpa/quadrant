@@ -1,9 +1,9 @@
-.team-card {
-  //border-width: 1px;
-  //border-style: solid;
-  //border-color: lightgrey;
-  //border-radius: 5px;
+.member-container {
   margin: 4em 1em 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0.5em 0.5em;
+  align-items: center;
 }
 
 .member-img {
@@ -17,14 +17,6 @@
   object-fit: cover;
   border-radius: 50%;
 }
-
-.member-container {
-  display: flex;
-  flex-direction: column;
-  padding: 1em 0.5em 0.5em;
-  align-items: center;
-}
-
 
 .member-img-container {
   display: block;

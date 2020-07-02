@@ -47,13 +47,13 @@ const TEAM = [
 const TeamPage = () => {
 
   const head = HEAD.map(h => (
-    <Col xs={10} sm={4} lg={4} className="team-card">
+    <Col xs={10} sm={4} lg={4}>
       <TeamItem title={h.title} name={h.name} imageURL={h.imageURL}/>
     </Col>
   ));
 
   const team = TEAM.map(t => (
-    <Col xs={9} sm={3} lg={3} className="team-card">
+    <Col xs={9} sm={3} lg={3}>
       <TeamItem title={t.title} name={t.name} imageURL={t.imageURL}/>
     </Col>
   ));

@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import "../index.scss";
 
 const TeamItem = (props) => (
