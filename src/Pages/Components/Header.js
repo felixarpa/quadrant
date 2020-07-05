@@ -1,11 +1,6 @@
-import React from 'react';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-
-const Styles = {
-  logo: {
-    marginRight: '1em',
-  }
-};
+import React from "react";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import "./index.scss";
 
 const flag = (flagName) => (
   <img
@@ -25,9 +20,8 @@ const Header = () => (
           src="https://quadrant12.netlify.app/logo.png"
           width="auto"
           height="50"
-          style={Styles.logo}
-          className="d-inline-block align-top"
-        />{' '}
+          className="d-inline-block align-top header-logo"
+        />{" "}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
