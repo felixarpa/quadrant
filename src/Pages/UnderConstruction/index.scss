@@ -1,8 +1,18 @@
-.container {
+@import "../index.scss";
+
+.under-construction-page {
+    right: 0;
+    left: 0;
+    width: initial;
+    height: 100%;
+    position: absolute;
+}
+
+.under-construction-container {
     height: 100%;
 }
 
-.row-height {
+.under-construction-row {
     height: 100%;
 }
 
@@ -15,5 +25,25 @@
 }
 
 div {
-    color: #063053;
+    color: $primary;
+}
+
+.under-construction-link:link {
+    color: $primary !important;
+    text-decoration: none;
+}
+
+.under-construction-link:visited {
+    color: $primary !important;
+    text-decoration: none;
+}
+
+.under-construction-link:hover {
+    color: $primary !important;
+    text-decoration: underline;
+}
+
+.under-construction-link:active {
+    color: $primary !important;
+    text-decoration: underline;
 }

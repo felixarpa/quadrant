@@ -12,13 +12,15 @@ const Footer = () => (
   <div className="footer-container">
     {footerLinks.map(link => (
       <p key={link.url}>
-        <a href={link.url} target="_blank" rel="noopener noreferrer">{link.text}</a>
+        <a href={link.url} target="_blank" rel="noopener noreferrer" className="footer-link">{link.text}</a>
       </p>
     ))}
     <div className="footer-separator" />
     <code>
       Made with <span role="img" aria-label="heart">❤️</span> by <b>
-        <a href="https://github.com/felixarpa" target="_blank" rel="noopener noreferrer">felixarpa</a>
+        <a href="https://github.com/felixarpa" target="_blank" rel="noopener noreferrer" className="footer-link">
+          felixarpa
+        </a>
       </b>
     </code>
   </div>
