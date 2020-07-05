@@ -26,8 +26,8 @@ const footerLinks = [
 
 const Footer = () => (
   <div style={Styles.footer}>
-    {footerLinks.map((link) => (
-      <p>
+    {footerLinks.map(link => (
+      <p key={link.url}>
         <a
           href={link.url}
           style={{ color: '#FFFFFF' }}
