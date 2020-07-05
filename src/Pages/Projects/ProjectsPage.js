@@ -58,18 +58,17 @@ class ProjectsPage extends React.Component {
     this.setState({ search: event.target.value.toLowerCase() });
   }
 
-  render() {
-    const { layout, sorting, search } = this.state;
-
-    const filteredProjects = PROJECTS.filter(a =>
-      search === null || (
-        a.title.toLowerCase().includes(search) ||
-        a.description.toLowerCase().includes(search) ||
-        a.location.toLowerCase().includes(search)
+  filterProjects = (projects, filtering) =>
+    projects.filter(a =>
+      filtering === null || (
+        a.title.toLowerCase().includes(filtering) ||
+        a.description.toLowerCase().includes(filtering) ||
+        a.location.toLowerCase().includes(filtering)
       )
     );
 
-    const projects = filteredProjects.sort((a, b) => {
+  sortProjects = (projects, sorting) =>
+    projects.sort((a, b) => {
       if (sorting === "new") {
         return b.date - a.date;
       } else if (sorting === "old") {
@@ -87,28 +86,35 @@ class ProjectsPage extends React.Component {
       }
     });
 
-    const projectsCards = projects.map(project => (
-      <Col xs={6} className="project-card">
-        <ProjectCard
-          title={project.title}
-          description={project.description}
-          imageURL={project.imageURL}
-          location={project.location}
-        />
-      </Col>
-    ));
-
-    const projectsList = projects.map(project => (
-      <ProjectItem
+  projectsCards = projects => projects.map(project => (
+    <Col key={project.date} xs={6}>
+      <ProjectCard
         title={project.title}
         description={project.description}
         imageURL={project.imageURL}
         location={project.location}
       />
-    ));
+    </Col>
+  ));
+
+  projectsList = projects => projects.map(project => (
+    <ProjectItem
+      key={project.date}
+      title={project.title}
+      description={project.description}
+      imageURL={project.imageURL}
+      location={project.location}
+    />
+  ));
+
+  render() {
+    const { layout, sorting, search } = this.state;
+
+    const filteredProjects = this.filterProjects(PROJECTS, search);
+    const projects = this.sortProjects(filteredProjects, sorting);
 
     return (
-      <Container className='page-container'>
+      <Container className='projects-page-container'>
         <Row className="justify-content-center">
           <Col sm={12} md={10}>
             <Container>
@@ -123,15 +129,9 @@ class ProjectsPage extends React.Component {
                   />
                 </Col>
               </Row>
-              {layout === "gallery" ?
-                <Row>
-                  {projectsCards}
-                </Row>
-                :
-                <Row>
-                  {projectsList}
-                </Row>
-              }
+              <Row>
+                {layout === "gallery" ? this.projectsCards(projects) : this.projectsList(projects)}
+              </Row>
             </Container>
           </Col>
         </Row>

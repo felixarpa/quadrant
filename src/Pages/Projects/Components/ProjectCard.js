@@ -1,17 +1,16 @@
 import React from "react";
-import { Card, Badge } from "react-bootstrap";
 import "../index.scss";
 
 const ProjectCard = (props) => (
-  <Card className="project-card">
-    <div className="card-img-container">
-      <img className="project-img" src={props.imageURL}  alt={`Project: ${props.title}`}/>
+  <div className="project-card-container project-clickable-element">
+    <div className="project-card-img-container">
+      <img className="project-img project-card-img" src={props.imageURL}  alt={`Project: ${props.title}`}/>
     </div>
-    <Card.Body>
-      <Card.Title>{props.title}</Card.Title>
-      <Card.Text><Badge variant="secondary">{props.location}</Badge>{` ${props.description.substring(0, 140)}...`}</Card.Text>
-    </Card.Body>
-  </Card>
+    <div className="project-card-content">
+      <h5>{props.title}</h5>
+      <p><span className="project-badge">{props.location}</span>{` ${props.description.substring(0, 140)}...`}</p>
+    </div>
+  </div>
 );
 
 

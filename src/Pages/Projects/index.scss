@@ -1,20 +1,20 @@
-@import "../../App.scss";
+@import "../index.scss";
 
-.page-container {
-    margin-bottom: 14.5em;
+// PAGE
+
+.projects-page-container {
+    margin-bottom: 4em;
 }
 
-.project-card {
-    margin-top: 1em;
-}
+// TOOLBAR
 
-.toolbar {
+.projects-toolbar {
     border-bottom-width: 1px;
     border-bottom-color: #063053;
     border-bottom-style: solid;
 }
 
-.search-box {
+.projects-toolbar-search-box {
     margin-right: 1em;
     margin-top: 1em;
     min-width: 30%;
@@ -22,22 +22,6 @@
     border-bottom-width: 1px;
     border-bottom-color: #063053;
     border-bottom-style: solid;
-}
-
-.sort-button {
-    margin-top: 1em;
-}
-
-.layout-toggle {
-    margin-top: 1em;
-}
-
-.card-img-container {
-    display: block;
-    width: 100%;
-    height: 0;
-    padding-bottom: 75%;
-    position: relative;
 }
 
 .project-img {
@@ -51,7 +35,47 @@
     object-fit: cover;
 }
 
-.item-container {
+.project-badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    color: white;
+    background-color: grey;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    border-radius: 0.25rem;
+    margin: 0;
+}
+
+// CARD
+
+.project-card-container {
+    margin: 1.5em 0 0 0;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+}
+
+.project-card-img-container {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    position: relative;
+}
+
+.project-card-img {
+    border-radius: 5px 5px 0 0;
+}
+
+.project-card-content {
+    padding: 1em;
+}
+
+// ITEM
+
+.project-item-container {
     display: flex;
     flex-direction: row;
     margin: 1em 1em 0 1em;
@@ -61,18 +85,28 @@
     border-color: lightgrey;
 }
 
-
-.item-img-container {
+.project-item-img-container {
     display: block;
     width: 0;
     height: 100%;
     padding-left: 20%;
     position: relative;
-    margin-right: 1em;
 }
 
-.item-content-container {
+.project-item-img {
+    border-radius: 5px 0 0 5px;
+}
+
+.project-item-content {
+    margin-left: 1em;
     padding: 1em 1em 1em 0;
 }
 
+// HOVER
 
+.project-clickable-element:hover {
+    box-shadow: 2px 2px 5px 0 lightgrey;
+    h5 {
+        text-decoration: underline;
+    }
+}

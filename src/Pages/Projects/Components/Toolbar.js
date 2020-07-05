@@ -11,17 +11,13 @@ import { Icon } from "@material-ui/core";
 import "../index.scss";
 
 const Toolbar = (props) => (
-  <Navbar className="justify-content-between toolbar">
-    <input
-      className="search-box"
-      placeholder="Search"
-      onChange={props.handleSearch}
-    />
+  <Navbar className="justify-content-between projects-toolbar">
+    <input className="projects-toolbar-search-box" placeholder="Search" onChange={props.handleSearch} />
     <Form inline>
       <DropdownButton
-        id="sorting-dropdown"
+        id="project-sorting"
         title="Sort"
-        className="mr-sm-2 button sort-button"
+        className="mr-sm-2"
         variant="outline-primary"
         onSelect={props.handleSorting}
       >
@@ -29,19 +25,12 @@ const Toolbar = (props) => (
         <Dropdown.Item eventKey="old" active={props.sorting === "old"}>Oldest</Dropdown.Item>
         <Dropdown.Item eventKey="name" active={props.sorting === "name"}>Name</Dropdown.Item>
       </DropdownButton>
-      <ToggleButtonGroup
-        name="layout-toggle"
-        type="checkbox"
-        className="layout-toggle"
-        value={props.layout}
-        onChange={props.handleLayout}
-      >
-        <ToggleButton variant="outline-primary" className="button" value="gallery"><Icon>view_module</Icon></ToggleButton>
-        <ToggleButton variant="outline-primary" className="button" value="list"><Icon>view_list</Icon></ToggleButton>
+      <ToggleButtonGroup name="layout-toggle" type="checkbox" value={props.layout} onChange={props.handleLayout}>
+        <ToggleButton variant="outline-primary" value="gallery"><Icon>view_module</Icon></ToggleButton>
+        <ToggleButton variant="outline-primary" value="list"><Icon>view_list</Icon></ToggleButton>
       </ToggleButtonGroup>
     </Form>
   </Navbar>
 );
-
 
 export default Toolbar;

@@ -1,7 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
-import ABlank from "../../../Components/ABlank";
 import "../index.scss";
 
 const Styles = {
@@ -32,7 +31,9 @@ const UnderConstructionCard = () => (
     <ListGroup className="list-group-flush text-justify-left">
       {contactLinks.map(link => (
         <ListGroup.Item key={link.url}>
-          <ABlank href={link.url}>{link.text}</ABlank>
+          <a className="under-construction-link" href={link.url} target="_blank" rel="noopener noreferrer">
+            {link.text}
+          </a>
         </ListGroup.Item>
       ))}
     </ListGroup>
