@@ -3,7 +3,7 @@ import { Card, Badge } from "react-bootstrap";
 import "../index.scss";
 
 const ProjectCard = (props) => (
-  <Card className="project-card">
+  <Card className="project-card-container">
     <div className="card-img-container">
       <img className="project-img" src={props.imageURL}  alt={`Project: ${props.title}`}/>
     </div>

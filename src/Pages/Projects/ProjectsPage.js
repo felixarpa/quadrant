@@ -87,7 +87,7 @@ class ProjectsPage extends React.Component {
     });
 
   projectsCards = projects => projects.map(project => (
-    <Col xs={6} className="project-card">
+    <Col key={project.date} xs={6}>
       <ProjectCard
         title={project.title}
         description={project.description}
@@ -99,6 +99,7 @@ class ProjectsPage extends React.Component {
 
   projectsList = projects => projects.map(project => (
     <ProjectItem
+      key={project.date}
       title={project.title}
       description={project.description}
       imageURL={project.imageURL}

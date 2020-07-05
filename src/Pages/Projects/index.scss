@@ -1,20 +1,20 @@
 @import "../../App.scss";
 
+// PAGE
+
 .projects-page-container {
     margin-bottom: 14.5em;
 }
 
-.project-card {
-    margin-top: 1em;
-}
+// TOOLBAR
 
-.toolbar {
+.projects-toolbar {
     border-bottom-width: 1px;
     border-bottom-color: #063053;
     border-bottom-style: solid;
 }
 
-.search-box {
+.projects-toolbar-search-box {
     margin-right: 1em;
     margin-top: 1em;
     min-width: 30%;
@@ -24,12 +24,10 @@
     border-bottom-style: solid;
 }
 
-.sort-button {
-    margin-top: 1em;
-}
+// CARD
 
-.layout-toggle {
-    margin-top: 1em;
+.project-card-container {
+    margin-top: 1.5em;
 }
 
 .card-img-container {
