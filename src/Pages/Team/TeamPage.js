@@ -44,36 +44,27 @@ const TEAM = [
   },
 ];
 
-const TeamPage = () => {
+const teamMembers = (team, xs, sm, lg) => team.map(member => (
+  <Col xs={xs} sm={sm} lg={lg} key={member.name.toLowerCase()}>
+    <TeamItem title={member.title} name={member.name} imageURL={member.imageURL}/>
+  </Col>
+));
 
-  const head = HEAD.map(h => (
-    <Col xs={10} sm={4} lg={4}>
-      <TeamItem title={h.title} name={h.name} imageURL={h.imageURL}/>
-    </Col>
-  ));
-
-  const team = TEAM.map(t => (
-    <Col xs={9} sm={3} lg={3}>
-      <TeamItem title={t.title} name={t.name} imageURL={t.imageURL}/>
-    </Col>
-  ));
-
-  return (
-    <Container className='page-container'>
-      <Row className="justify-content-center">
-        <Col sm={12} md={10}>
-          <Container>
-            <Row className="justify-content-around">
-              {head}
-            </Row>
-            <Row className="justify-content-around">
-              {team}
-            </Row>
-          </Container>
-        </Col>
-      </Row>
-    </Container>
-  );
-}
+const TeamPage = () => (
+  <Container>
+    <Row className="justify-content-center">
+      <Col sm={12} md={10}>
+        <Container>
+          <Row className="justify-content-around">
+            {teamMembers(HEAD, 10, 4, 4)}
+          </Row>
+          <Row className="justify-content-around">
+            {teamMembers(TEAM, 9, 3, 3)}
+          </Row>
+        </Container>
+      </Col>
+    </Row>
+  </Container>
+);
 
 export default TeamPage;
