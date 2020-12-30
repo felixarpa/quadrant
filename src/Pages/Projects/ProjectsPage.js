@@ -5,8 +5,7 @@ import { ProjectDetailsPage } from "./ProjectDetails";
 
 const ProjectsPage = () => {
   const match = useRouteMatch();
-  console.log(match);
-  console.log(match.path);
+
   return (
     <div>
       <Route exact path={match.path}>

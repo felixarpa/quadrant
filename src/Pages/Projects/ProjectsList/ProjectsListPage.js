@@ -32,7 +32,6 @@ class ProjectsListPage extends React.Component {
         return response.json();
       })
       .then(response => {
-        console.log(response);
         this.setState({ projects: response.projects })
       });
   }
@@ -84,6 +83,7 @@ class ProjectsListPage extends React.Component {
   projectsCards = projects => projects.map(project => (
     <Col key={project.date} xs={6}>
       <ProjectCard
+        projectId={project.id}
         title={project.title}
         description={project.description}
         placeholder={project.placeholder}
@@ -94,6 +94,7 @@ class ProjectsListPage extends React.Component {
 
   projectsList = projects => projects.map(project => (
     <ProjectItem
+      projectId={project.id}
       key={project.date}
       title={project.title}
       description={project.description}
