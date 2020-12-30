@@ -4,7 +4,7 @@ import "../index.scss";
 const ProjectItem = (props) => (
   <div className="project-item-container project-clickable-element">
     <div className="project-item-img-container">
-      <img className="project-img project-item-img" src={props.imageURL}  alt={`Project: ${props.title}`}/>
+      <img className="project-img project-item-img" src={props.placeholder}  alt={`Project: ${props.title}`}/>
     </div>
     <div className="project-item-content">
       <h5>{props.title}</h5>
