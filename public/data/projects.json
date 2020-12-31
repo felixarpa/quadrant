@@ -1,0 +1,42 @@
+{
+  "projects": [
+    {
+      "id": "zmramis",
+      "title": "Cool garden",
+      "location": "Sant Cugat del Vallés",
+      "date": 20200201,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in tempus lectus, ac accumsan risus. Mauris vitae nunc lobortis, aliquam risus ac, aliquet quam. Sed nec sodales dolor, id aliquam lacus. Vivamus sit amet fringilla risus. Donec imperdiet nisi mi, interdum cursus dui convallis ut. Phasellus molestie odio id velit feugiat, quis dictum tellus consequat. In id tincidunt lacus, faucibus imperdiet sapien. Sed pellentesque tempus tincidunt. Vestibulum ac tristique libero. Nunc elementum, libero at efficitur posuere, mi dui faucibus risus, vitae molestie est mauris vitae justo. Cras accumsan urna nec varius sagittis. Nulla et lorem elit. Nunc lacus lectus, convallis id ex vel, varius convallis lectus.",
+      "placeholder": "https://quadrant12.netlify.app/images/zmramis/04.jpg",
+      "images": [
+        "04.jpg",
+        "10.jpg",
+        "17.jpg"
+      ]
+    },
+    {
+      "id": "zmstpau",
+      "title": "Something in Bellaterra",
+      "location": "Bellaterra",
+      "date": 20191005,
+      "description": "Nunc varius enim purus, ac aliquam enim auctor at. Donec condimentum urna a libero porta feugiat id porttitor turpis. Nam mi arcu, consectetur nec libero et, euismod tincidunt quam. Sed imperdiet id justo quis mollis. Sed vestibulum vel tellus sit amet gravida. Nulla maximus vestibulum nulla, sed tincidunt enim interdum non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus justo erat, mollis in odio eget, volutpat luctus risus. Nulla velit metus, vulputate et sapien ut, auctor ullamcorper risus. Morbi a sem leo.",
+      "placeholder": "https://quadrant12.netlify.app/images/zmstpau/20131219_Pav_Merce_9498.jpeg",
+      "images": [
+        "20131219_Pav_Merce_9498.jpeg",
+        "20131219_Pav_Merce_9771.jpeg",
+        "20131219_Pav_Merce_9774.jpeg"
+      ]
+    },
+    {
+      "id": "ballobar",
+      "title": "Another project",
+      "location": "Barcelona",
+      "date": 20190804,
+      "description": "Vivamus mollis varius urna, id molestie felis. Suspendisse sed dui odio. Cras vel ipsum lorem. Aliquam erat volutpat. Sed in ex ornare, ullamcorper dui sit amet, porta risus. Donec lacus justo, viverra non auctor at, tempus sed dui. Proin cursus et ante at auctor. Fusce quis consectetur nulla. Maecenas pulvinar rutrum porta. Nam placerat justo ut urna euismod suscipit. Mauris sagittis elit quis elementum rhoncus. Curabitur gravida tempus tincidunt. Nunc vitae ex vitae eros elementum ullamcorper a vitae odio. Pellentesque mollis posuere dolor, fermentum tincidunt turpis semper eu. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+      "placeholder": "https://quadrant12.netlify.app/images/ballobar/20191107_170042.jpg",
+      "images": [
+        "20191107_170042.jpg",
+        "20191107_170457.jpg"
+      ]
+    }
+  ]
+}

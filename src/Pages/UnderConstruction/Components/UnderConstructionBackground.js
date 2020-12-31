@@ -26,14 +26,14 @@ const slideStyle = (imageUrl) => {
 };
 
 const images = [
-  "images/zmramis/04.jpg",
-  "images/zmramis/10.jpg",
-  "images/zmramis/17.jpg",
-  "images/ballobar/20191107_170042.jpg",
-  "images/ballobar/20191107_170457.jpg",
-  "images/zmstpau/20131219_Pav_Merce_9498.jpeg",
-  "images/zmstpau/20131219_Pav_Merce_9771.jpeg",
-  "images/zmstpau/20131219_Pav_Merce_9774.jpeg",
+  "/images/zmramis/04.jpg",
+  "/images/zmramis/10.jpg",
+  "/images/zmramis/17.jpg",
+  "/images/ballobar/20191107_170042.jpg",
+  "/images/ballobar/20191107_170457.jpg",
+  "/images/zmstpau/20131219_Pav_Merce_9498.jpeg",
+  "/images/zmstpau/20131219_Pav_Merce_9771.jpeg",
+  "/images/zmstpau/20131219_Pav_Merce_9774.jpeg",
 ];
 
 class UnderConstructionBackground extends React.Component {
