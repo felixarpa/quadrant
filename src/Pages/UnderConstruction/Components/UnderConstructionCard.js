@@ -20,7 +20,7 @@ const Styles = {
 const contactLinks = [
   { url: 'tel:+34936745559', text: '(+34) 936 745 559' },
   { url: 'mailto:derzu@quadrant12.com', text: 'derzu@quadrant12.com' },
-  { url: 'https://goo.gl/maps/2hrA9odYb5QsZE1V8', text: 'Passeig del Vapor Gran, 29, 2ª Planta, Oficina-A · 08221 Terrassa · Barcelona' },
+  { url: 'https://goo.gl/maps/2hrA9odYb5QsZE1V8', text: 'Passeig del Vapor Gran, 29, 2ª Planta, Oficina-B · 08221 Terrassa · Barcelona' },
   { url: 'https://goo.gl/maps/BfqdHpwCQK9sedFfA', text: 'Carrer de la Mercè 55, baix 2 · 25100 Almacelles · Lleida' },
 ];
 
